@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column; /* Ensure elements stack vertically */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .content {
+    padding: 20px 0; /* Add vertical spacing */
+    border-bottom: 1px solid #ddd; /* Add a divider */
+  }
+
+  .image {
+    padding: 200px 0; /* Add vertical spacing */
+    position: relative;
+    text-align: center;
+  }
+
+  .font-weight-bold {
+    font-weight: 500;
+    color: #244063;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .headdingA {
+    color: #403e3b;
+  }
+
+  .paragA {
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: left;
+  }
+
+  .ms-auto {
+    margin-left: auto;
+  }
+
+  .doctor {
+    font-weight: bold;
+    color: red;
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+  }
+
+  .founder {
+    text-align: center;
+    display: block;
+  }
+
+  @media (min-width: 768px) {
+    .container {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+
+    .content,
+    .image {
+      flex: 1;
+    }
+
+    .content {
+      padding: 0 20px; /* Reset padding for content */
+      border-bottom: none; /* Remove the divider */
+    }
+
+    .image {
+      padding: 0 20px; /* Reset padding for image */
+      text-align: left; /* Reset text alignment for image */
+    }
+
+    .doctor,
+    .founder {
+      text-align: left; /* Reset text alignment for name and founder on larger screens */
+      margin-top: 20px; /* Add spacing below image in desktop view */
+    }
+
+    .image img {
+      width: 100%; /* Make the image width 100% */
+    }
+
+    .doctor,
+    .founder {
+      margin-top: 0; /* Remove extra margin-top */
+      margin-left: 0; /* Reset margin-left for name and founder */
+    }
+  }

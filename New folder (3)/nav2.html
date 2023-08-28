@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar with Logo and Hamburger Menu</title>
+    <link rel="stylesheet" href="ss.css" />
+    <!-- Link to your external CSS file -->
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="#" class="navbar-logo"
+        ><img src="https://bhartieyefoundation.in/img/logo21.png" alt="logo"
+      /></a>
+      <div class="navbar-toggle" id="navbarToggle">
+        &#9776;
+        <!-- Hamburger icon -->
+      </div>
+      <div class="navbar-menu">
+        <a href="#" class="navbar-menu-item">Home</a>
+        <a href="#" class="navbar-menu-item">About Us</a>
+        <a href="#" class="navbar-menu-item">Find Eye Specialist</a>
+
+        <div class="navbar-submenu">
+          <a href="#" class="navbar-menu-item dropdown-trigger">Services</a>
+          <div class="navbar-submenu services-dropdown">
+            <a href="#" class="navbar-submenu-item">CLEAR</a>
+            <a href="#" class="navbar-submenu-item">REFRACTIVE SURGERY</a>
+            <a class="navbar-submenu-item">CATARACT SURGERY</a><br />
+            <a class="navbar-menu-item">LASER CATARACT SURGERY</a><br />
+            <a class="navbar-menu-item">RETINA SURGERY</a><br />
+            <a class="navbar-menu-item">GLAUCOMA TREATMENT</a>
+          </div>
+        </div>
+
+        <a href="#" class="navbar-menu-item">Know Your Eye</a>
+        <a href="#" class="navbar-menu-item">Disease</a>
+        <a href="#" class="navbar-menu-item">Contact us</a>
+        <a href="#" class="navbar-menu-item">Gallery</a>
+        <a href="#" class="navbar-menu-item">Charity</a>
+        <a href="#" class="navbar-menu-item">Empanelment</a>
+      </div>
+    </div>
+
+    <script>
+      const navbarToggle = document.getElementById("navbarToggle");
+      const navbarMenu = document.querySelector(".navbar-menu");
+
+      navbarToggle.addEventListener("click", () => {
+        navbarMenu.classList.toggle("active");
+      });
+    </script>
+
+
+
+    </script>
+  </body>
+</html>

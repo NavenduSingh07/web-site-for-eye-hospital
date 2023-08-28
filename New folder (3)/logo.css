@@ -1,0 +1,25 @@
+/* Reset some default styles */
+body, h1, h2, h3, h4, p, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Centered banner styles */
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 19vh; /* Set the banner height to full viewport height */
+    background-color: #3498db; /* Banner background color */
+}
+
+.banner img {
+    max-width: 9%; /* Ensure the logo fits within the container */
+}

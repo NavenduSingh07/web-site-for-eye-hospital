@@ -1,0 +1,27 @@
+ /* Reset some default styles */
+ body, h1, h2, h3, h4, p, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  /* Video container styles */
+  .video-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden; /* Prevent video overflow */
+  }
+
+  /* Video styles */
+  video {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Apply custom styles to the controls */
+  video::-webkit-media-controls {
+    display: none;
+  }
